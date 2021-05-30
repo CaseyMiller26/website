@@ -1,0 +1,304 @@
+/* CSS Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+@font-face {
+  font-family: 'DCCAsh';
+  src: url('../fonts/DCCAsh.otf')format('truetype');
+}
+
+h2 {
+  font-family: "DCCAsh", sans-serif;
+  font-weight: 500;
+  font-size: 70pt;
+  text-align: left;
+  color: #EDE42F;
+  padding-top: 100px;
+  padding-left: 75px;
+}
+
+h4 {
+  font-family: "DCCAsh", sans-serif;
+  font-weight: 500;
+  font-size: 50pt;
+  text-align: left;
+  color: #EDE42F;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-left: 50px;
+}
+
+h5 {
+  font-family: "DCCAsh", sans-serif;
+  font-weight: 500;
+  font-size: 30pt;
+  color: #EDE42F;
+  text-align: left;
+  padding-top: 90px;
+  padding-left: 0;
+}
+
+h3 {
+  font-family: 'DCCAsh', sans-serif;
+  font-weight: 500;
+  font-size: 30pt;
+  color: #EDE42F;
+  padding-left: 75px;
+}
+
+h1 {
+  text-align: left;
+  padding-left: 0px;
+  font-family: 'Oswald', sans-serif;
+  font-size: 24pt;
+  color: white;
+}
+
+p {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  padding-left: 0px;
+  padding-right: 100px;
+  padding-top: 40px;
+  padding-bottom: 30px;
+  text-align: left;
+  color: white;
+}
+
+body {
+  background-color: #1C3B54;
+}
+
+/* Flexbox Grid */
+.flex-grid {
+  display: flex;
+}
+
+.col {
+  flex: 1;
+  /* flex: 1 - tells the browser that all flex items are the same size */
+  /* border: solid 2px grey; */
+}
+
+/* Navagation Menu */
+nav {
+  background: #08253B;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 7vh;
+  position: fixed;
+  width: 100%;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  padding: 1em 1.5em;
+  font-family: 'Oswald', sans-serif;
+  font-size: 15pt;
+  font-weight: 500;
+}
+
+nav a:hover {
+  cursor: pointer;
+  color: #F3E600;
+  border-bottom: solid 2px #F3E600;
+}
+
+nav a.right {
+  margin-right: auto;
+}
+
+nav a.right:hover {
+  border: 0;
+}
+
+.current {
+  color: white;
+  /* border-bottom: solid 2px white; */
+}
+
+iframe {
+  justify-content: center;
+  align-items: center;
+  padding-left: 75px;
+}
+
+button {
+  background-color: #1C3B54;
+  border-color: #1C3B54;
+  border-width: 0;
+  border-style: none;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 15pt;
+}
+
+:focus {
+  outline: #1C3B54;
+  outline-color: #1C3B54;
+  outline-style: auto;
+  outline-width: 0;
+  text-decoration: underline;
+}
+
+/*
+h1, h2, h3, h4 {
+  padding-top: 100px;
+} */
+/* ---------------------------------------------------------------- */
+#footer {
+  background: #08253B;
+  display: flex;
+  height: 7vh;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+}
+
+#footer .col {
+  padding-left: 20px;
+  padding-top: 10px;
+  align-items: center;
+}
+
+#footer .flex-grid {
+  align-items: center;
+  display: flex;
+}
+
+/* landing Section */
+#landing {
+  background-image: url('../images/background.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  height: 100vh;
+  /* 90% of the available veiw height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#landing img {
+  max-width: 300px;
+}
+
+#Characters {
+  height:
+    150vh;
+}
+
+#About .col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  padding-left: 80px;
+}
+
+#NewSeason .col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+  height: 70vh;
+}
+
+#Characters .flex-grid {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  padding-top: 190px;
+}
+
+#Characters .w3-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#Seasons .col {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  /* height: 60vh; */
+  padding-top: 50px;
+}
+
+#streamingservices .col {
+  display: inline-flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: flex-start;
+  justify-content: space-around;
+  /* width: 30px; */
+  flex: 0;
+  margin: 20px;
+  margin-top: 0;
+}
+
+#Seasons {
+  display: flex;
+  flex-direction: column;
+}
+
+#Seasons .flex-grid {
+  padding-left: 30px;
+  padding-top: 0;
+}
+
+/* Media Queries */
+@media screen and (max-width: 600px) {
+  section#landing {
+    height: 70vh;
+    max-width: 100%;
+  }
+
+  .col {
+    flex: 0;
+  }
+
+  .flex-grid {
+    display: block;
+  }
+
+  section#NewSeason div.col {
+    height: auto;
+    padding-left: 20px;
+    max-width: 100%;
+  }
+
+  section#About div.col {
+    height: auto;
+  }
+
+  section#streamingservices div.col {
+    height: auto;
+  }
+}
